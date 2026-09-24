@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réva · Saloni Sharma</title>
+  <meta name="description" content="Saloni Sharma — BTech student & builder. Also Réva. Code, systems, and quiet creative work from Dehradun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#top" class="nav-logo">réva</a>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#connect">connect</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-eyebrow fade-up">don't leave a fallen angel out here on her own</p>
+      <h1 class="hero-title fade-up">
+        <span class="line">Saloni Sharma</span>
+        <span class="line soft">also Réva</span>
+      </h1>
+      <p class="hero-sub fade-up">
+        BTech · systems & interfaces · Dehradun<br />
+        building things that feel clear, then a little poetic
+      </p>
+      <div class="hero-cta fade-up">
+        <a href="#work" class="btn primary">see the work</a>
+        <a href="#connect" class="btn ghost">say hello</a>
+      </div>
+    </div>
+    <div class="scroll-hint fade-up">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">01 — about</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>I write code the way I write songs — until it sounds right.</h2>
+          <p>
+            I'm Saloni, a BTech student at Graphic Era (Dehradun). Most days I'm in the
+            terminal or the debugger. Some days I'm Réva — the quieter side that still
+            cares about melody, movement, and the feeling a thing leaves behind.
+          </p>
+          <p>
+            I care about systems you can actually see: scheduling algorithms that move,
+            interfaces that don't fight you, backends that stay honest. Learning is the
+            constant. Everything else is practice.
+          </p>
+          <div class="about-meta">
+            <div>
+              <span class="meta-label">based in</span>
+              <span>Dehradun, Uttarakhand</span>
+            </div>
+            <div>
+              <span class="meta-label">currently</span>
+              <span>learning · building · shipping small things</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <p class="card-quote">“Don't leave a fallen angel out here on her own.”</p>
+            <p class="card-note">profile motto · still true</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-label">02 — selected work</div>
+      <h2 class="section-title">Things I've touched</h2>
+
+      <div class="projects">
+        <article class="project featured">
+          <div class="project-num">01</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>C++17</span><span>Qt6</span><span>MySQL</span><span>CMake</span>
+            </div>
+            <h3>OSimX</h3>
+            <p class="project-role">UI & Backend · Team Avengers · Graphic Era</p>
+            <p>
+              Interactive Operating System simulator — 10 core modules, persistent
+              experiment history, Gantt charts, memory frames, disk head movement.
+              I contributed the disk scheduling module (FCFS, SSTF, SCAN family),
+              UI pieces, and a lot of the structural cleanup that made the project
+              actually shippable.
+            </p>
+            <a href="https://github.com/Dipanshu0001-OP/OSimX" target="_blank" rel="noopener" class="project-link">
+              view on GitHub <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-num">02</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>backend</span><span>events</span>
+            </div>
+            <h3>EventNexus</h3>
+            <p class="project-role">personal / exploratory</p>
+            <p>
+              Early structure for an event-focused system — auth, controllers,
+              models, repositories, services. Still learning in public.
+            </p>
+            <a href="https://github.com/revv-a/EventNexus" target="_blank" rel="noopener" class="project-link">
+              view on GitHub <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-num">03</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <h3>buttons</h3>
+            <p class="project-role">small experiments</p>
+            <p>
+              Interaction studies — hover states, micro-feedback, the quiet joy
+              of a button that feels right when you press it.
+            </p>
+            <a href="https://github.com/revv-a/buttons" target="_blank" rel="noopener" class="project-link">
+              view on GitHub <span>→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">03 — stack & focus</div>
+      <h2 class="section-title">What I reach for</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul>
+            <li>C++17</li>
+            <li>Python</li>
+            <li>JavaScript / HTML / CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Systems & Tools</h4>
+          <ul>
+            <li>Qt6 · CMake</li>
+            <li>MySQL</li>
+            <li>Git · GitHub</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Interests</h4>
+          <ul>
+            <li>OS concepts & simulators</li>
+            <li>Clean UI / interaction design</li>
+            <li>Backend structure</li>
+            <li>AI literacy (learning)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Also</h4>
+          <ul>
+            <li>AWS Student Builder</li>
+            <li>Cybersecurity foundations</li>
+            <li>Intro to AI (IBM)</li>
+            <li>songs · movement · stage (as Réva)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section connect" id="connect">
+    <div class="container">
+      <div class="section-label">04 — connect</div>
+      <h2 class="section-title">Find me</h2>
+      <p class="connect-lead">
+        Open to collaboration on systems, educational tools, and thoughtful interfaces.
+        If something here resonates — say hi.
+      </p>
+      <div class="connect-links">
+        <a href="https://github.com/revv-a" target="_blank" rel="noopener" class="connect-card">
+          <span class="connect-icon">⌘</span>
+          <span class="connect-name">GitHub</span>
+          <span class="connect-handle">@revv-a</span>
+        </a>
+        <a href="https://www.linkedin.com/in/saloni-sharma-b0854131b/" target="_blank" rel="noopener" class="connect-card">
+          <span class="connect-icon">in</span>
+          <span class="connect-name">LinkedIn</span>
+          <span class="connect-handle">Saloni Sharma</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>built with care · Dehradun</p>
+      <p class="footer-alias">réva · saloni</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
